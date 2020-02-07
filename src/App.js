@@ -1,14 +1,21 @@
-import React, { Component } from 'react';
+import React, {Component, Suspense} from 'react';
 import routes from './router';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
-
+import './i18n';
+const Loader = () => (
+    <div className="App">
+        <div>loading...</div>
+    </div>
+);
 class App extends Component {
 
     render() {
         return (
-            <Router >
-                    {this.showContentMenus(routes)}
-            </Router>
+            <Suspense fallback={<Loader />}>
+                <Router >
+                        {this.showContentMenus(routes)}
+                </Router>
+            </Suspense>
         );
     }
 
