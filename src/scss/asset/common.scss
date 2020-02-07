@@ -1,0 +1,19 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+#root{
+    background-color: #c8ced350;
+    display: flex;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background-size: 100%;
+    min-height: 100%;   
+    overflow: hidden;
+}
+#dashboard {
+    width: 100%;
+}

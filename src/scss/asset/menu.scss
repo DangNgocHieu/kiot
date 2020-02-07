@@ -1,0 +1,26 @@
+#menu {
+    height: 44px;
+    background: #4b6580;
+
+    .wrraper {
+        width: 1570px;
+        margin: 0 auto;
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+
+        .list-menu {
+            display: flex;
+        }
+        
+        a { 
+            height: 44px;
+            line-height: 2.5;
+            text-decoration: none;
+            font-size: 14px;
+            color: #fff;
+            padding-right: 10px;
+        }
+        
+    }
+}

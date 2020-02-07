@@ -1,0 +1,158 @@
+#login { 
+    font-size: 14px;
+    background: url(http://cdn-app.kiotviet.vn/img/login-bg-update.png) no-repeat;
+    width: 100%;
+
+    .loginbox {
+        width: 440px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: absolute;
+        left: calc((100% - 440px)/2);
+        top: calc((100% - 320px)/2);
+
+        .text {
+            width: 125px;
+            height: 90px;
+            margin: 0 auto;
+            font-size: 13px;
+            position: relative;
+            
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                margin: 17px 0 12px;
+
+                img {
+                    width: 84px;
+                }
+
+                .text-login {
+                    margin-bottom: 6px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #666666;
+                }
+            }
+        }
+        .formlogin {
+            padding: 20px 25px 30px;
+            
+            input {
+                width: 100%;
+                border: none;
+                font-size: 15px;
+                color: #111111;
+                padding: 0 2px 12px;
+                overflow: visible;
+                display: block;
+                box-sizing: border-box;
+                border-bottom: 1px solid #d1d1d1;
+            }
+
+            .username, .password {
+                margin-bottom: 25px;
+                border-color: #fff;
+            }
+            #UserName:focus{
+                border-bottom: 2px solid #4bac4d;
+            }
+            #Password:focus{
+                border-bottom: 2px solid #4bac4d;
+            }
+
+            .remember {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                height: 20px;
+
+                img {
+                    width: 14px;
+                    height: 16px;
+                    position: absolute;
+                }
+
+                .split {
+                    padding: 0 15px;
+                    color: #bfbfbf;
+                    margin-top: -1px;
+                    position: absolute;
+                    left: 125px;
+                }
+
+                .link {
+                    text-decoration: none;
+                    color: #999999;
+                    position: absolute;
+                    left: 160px;
+                }
+
+                .remember-login {
+                    font-size: 13px;
+                    color: #333333;
+                    white-space: nowrap;
+                    position: absolute;
+                    left: 20px;
+                    margin-top: 1px;
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+        .lgBtn {
+            height: 50px;
+            display: flex;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            overflow: hidden;
+
+            .loginBtn {
+                background: #0080c9;
+                width: 50%;
+                box-sizing: border-box;
+                border: none;
+                font-size: 16px;
+                line-height: 3;
+                display: flex;
+                justify-content: center;
+                font-weight: 600;
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    background: #1313ef;
+                }
+                img {
+                    width: 18px;
+                    height: 16px;
+                    margin-top: 16px;
+                    padding-right: 8px;
+                }
+            }
+            
+            .loginBtnSale {
+                background: #4bac4d;
+                &:hover{
+                    background: #02661b;
+                }
+            }
+        }
+    }
+    .other {
+        font-size: 12px;
+        color: #969696;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        padding-bottom: 70px;
+        position: absolute;
+
+        img {
+            width: 10px;
+            height: 12px;
+            padding-right: 10px;
+        }
+    }
+}

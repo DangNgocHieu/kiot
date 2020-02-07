@@ -1,0 +1,113 @@
+#header {
+    
+    .wrraper {
+        display: flex;
+        justify-content: space-between;
+        height: 49px;
+        font-size: 13px;
+        max-width: 1570px;
+        margin: 0 auto;
+
+        .list-menu {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            box-sizing: border-box;
+
+            a {
+                text-decoration: none;
+                line-height: 2;
+            }
+            li {
+                list-style: none;
+                margin: 0;
+                padding-top: 10px;
+                line-height: 1.5;
+                
+            }
+            .topic {
+                width: 82px;
+                padding: 9px 10px;
+                
+            }
+
+            .support {
+                width: 74px;
+                padding: 9px 10px;
+                
+            }
+
+            .dowload {
+                width: 146px;
+                padding: 9px 10px;
+                
+            }
+
+            .branch-center {
+                width: 168px;
+                text-align: end;;
+                padding: 6px 0 6px 8px;
+                
+            }
+
+            .setup {
+                position: relative;
+                padding: 7px 10px 11px;
+                width: 90px;
+                
+                ul {
+                    display: none
+                    // position: absolute;
+                    // width: 180px;
+                    // right: 0;
+                    // top:63px;
+                    // margin: 0;
+                    // padding: 0;
+                   
+                }
+                
+                &:hover {
+                    background: #2782c0;
+                    ul{
+                        background: #2782c0;
+                        position: absolute;
+                        display: block;
+                        width: 180px;
+                        right: 0;
+                        margin: 0;
+                        padding: 0;
+                        top:49px;
+
+                        li {
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+            .account {
+                width: 116px;
+                padding: 7px 12px 11px;
+                position: relative;
+                
+
+                ul {
+                    display: none;
+                    width: 170px;
+
+                }
+                &:hover {
+                    background: #2782c0;
+                    ul{
+                        position: absolute;
+                        display: block;
+                        right: 0;
+                        background: #2782c0;
+                        margin: 0;
+                        padding: 0;
+                        top:49px;
+                    }
+                }
+            }
+        }
+    }
+}
