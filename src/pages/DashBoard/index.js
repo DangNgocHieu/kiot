@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import { Form, Container} from 'reactstrap';
 import Header from './../../component/Header';
-import Content from './../../component/Content'
+// import Content from './../../component/Content'
 import Menu from './../../component/Menu' 
 
 
