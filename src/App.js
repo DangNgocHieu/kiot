@@ -2,6 +2,7 @@ import React, {Component, Suspense} from 'react';
 import routes from './router';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import './i18n';
+import Header from './component/Header';
 const Loader = () => (
     <div className="App">
         <div>loading...</div>
@@ -36,5 +37,6 @@ class App extends Component {
         return <Switch>{result}</Switch>;
     }
 }
+
 
 export default App;

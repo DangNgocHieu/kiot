@@ -1,7 +1,43 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
 #menu {
     height: 44px;
     background: #4b6580;
-
+    &.color-1 {
+        background: #2e94da;
+    }
+    &.color-2 {
+        background: #9b59b6;
+    }
+    &.color-3 {
+        background:  #16a085;
+    }
+    &.color-4 {
+        background: #4b6580;
+    }
+    &.color-5 {
+        background: #d64457;
+    }
+    &.color-6 {
+        background: #E67E22;
+    }
+    &.color-7 {
+        background: #4bac4d;
+    }
+    &.color-8 {
+        background: #6e9992;
+    }
+    &.color-9 {
+        background: #d73b8c;
+    }
     .wrraper {
         width: 1570px;
         margin: 0 auto;
@@ -9,20 +45,69 @@
         display: flex;
         justify-content: space-between;
 
-        .list-menu {
+        .list-menu , .shop {
             display: flex;
-        }
-        
-        a { 
-            height: 44px;
-            text-decoration: none;
-            font-size: 14px;
-            color: #fff;
-            padding-right: 10px;
-            display: flex;
-            align-items: center;
-            border-right: 1px solid rgba(0,0,0,.1);
-        }
-        
+
+            .icon-menu {
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+
+            .icon-menu-chill {
+                padding-left: 20px;
+                padding-right: 5px;
+                width: 30px;
+                max-width: 30px;
+            }
+            a { 
+                height: 44px;
+                text-decoration: none;
+                font-size: 14px;
+                color: #fff;
+                padding:0 10px;
+                display: flex;
+                align-items: center;
+                border-left: 1px solid rgba(255,255,255,.2)
+            }
+            
+            .overview {
+                background: #41556e;
+                border: none;
+            }
+            .merchandise , .exchange, .partner , .staff , .report{
+                position: relative;
+
+                ul {
+                    position: absolute;
+                    top: 44px;
+                    width: 200px;
+                    background: #41556e;
+                    left: 0;
+                    display:none;
+                    z-index: 999;
+                }
+                &:hover {
+                    background: #41556e;
+                    ul {
+                        display: inline-table;
+                        
+                        li:hover {
+                            background: #4b6580 ;
+                        }
+                    }
+                }
+            }
+
+            
+            .report {
+                border-right:1px solid rgba(0,0,0,.1)
+            }
+            .sell{
+                background: #0076b9;
+                &:hover{
+                    background: #3f3f3f;
+                }
+            }
+        }              
     }
 }
