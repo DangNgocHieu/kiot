@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from './../../component/Header';
 import Menu from './../../component/Menu' ;
 import ContainerDashBoard from './../../component/ContainerDashBoard';
-
+import Support from './../../component/Support';
 
 class DashBoard extends Component {
   constructor(props) {
@@ -57,6 +57,7 @@ class DashBoard extends Component {
       <div id="dashboard">
       <Header  color={this.state.color} />
          <ContainerDashBoard />
+         <Support />
       </div>
     );
   }

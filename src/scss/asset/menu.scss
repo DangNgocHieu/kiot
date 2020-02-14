@@ -13,31 +13,241 @@ li{
     background: #4b6580;
     &.color-1 {
         background: #2e94da;
+        .wrraper .list-menu .overview {
+            background: #2782c0;            
+        }
+        .wrraper .shop {
+            background: #2782c0;  
+            &:hover {
+                background: #0067a2;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #2e94da;
+                    ul {
+                        display: inline-table;
+                        background-color: #2e94da;
+                        li:hover {
+                            background: #2782c0 ;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-2 {
         background: #9b59b6;
+        .wrraper .list-menu .overview {
+            background: #844c9b;
+        }
+        .wrraper .shop {
+            background: #844c9b;
+            &:hover {
+                background: #5b26af;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #9b59b6;
+                    ul {
+                        display: inline-table;
+                        background-color: #9b59b6;
+                        li:hover {
+                            background: #844c9b ;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-3 {
         background:  #16a085;
+        .wrraper .list-menu .overview {
+            background: #138871;
+        }
+        .wrraper .shop {
+            background: #138871;
+            &:hover {
+                background: #0a5d4d;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #16a085;
+                    ul {
+                        display: inline-table;
+                        background-color: #16a085;
+                        li:hover {
+                            background: #138871 ;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-4 {
         background: #4b6580;
+        .wrraper .list-menu .overview {
+            background: #41556e;
+        }
+        .wrraper .shop {
+            background: #0076b9;
+            &:hover {
+                background: #41556e;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #4b6580;
+                    ul {
+                        display: inline-table;
+                        background-color:#4b6580;
+                        li:hover {
+                            background: #41556e;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-5 {
         background: #d64457;
+        .wrraper .list-menu .overview {
+            background: #b53b4a;
+        }
+        .wrraper .shop {
+            background: #eb5669;
+            &:hover {
+                background: #b53b4a;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #d64457;
+                    ul {
+                        display: inline-table;
+                        background-color:#d64457;
+                        li:hover {
+                            background: #b53b4a;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-6 {
         background: #E67E22;
+        .wrraper .list-menu .overview {
+            background:#ba5b07;
+        }
+        .wrraper .shop {
+            background: #ba5b07;
+            &:hover {
+                background: #ab4125;
+            }
+        }
+        
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #E67E22;
+                    ul {
+                        display: inline-table;
+                        background-color: #E67E22;
+                        li:hover {
+                            background: #ba5b07
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-7 {
         background: #4bac4d;
-    }
+        .wrraper .list-menu .overview {
+            background: #219452;
+        }
+        .wrraper .shop {
+            background: #219452;
+            &:hover {
+                background: #2c6a1e
+            }
+        }
+            .wrraper .list-menu {
+                .merchandise , .exchange, .partner , .staff , .report {
+                    &:hover {
+                        background: #4bac4d;
+                        ul {
+                            display: inline-table;
+                            background-color: #4bac4d;
+                            li:hover {
+                                background: #219452;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
     &.color-8 {
         background: #6e9992;
+        .wrraper .list-menu .overview {
+            background:  #5e827c;
+        }
+        .wrraper .shop {
+            background: #5e827c;
+            &:hover {
+                background: #39524E;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #6e9992;
+                    ul {
+                        display: inline-table;
+                        background-color: #6e9992;
+                        li:hover {
+                            background: #5e827c;
+                        }
+                    }
+                }
+            }
+        }
     }
     &.color-9 {
         background: #d73b8c;
-    }
+        .wrraper .list-menu .overview {
+            background: #b63375;
+        }
+        .wrraper .shop {
+            background:  #b63375;
+            &:hover {
+                background: #821e52;
+            }
+        }
+        .wrraper .list-menu {
+            .merchandise , .exchange, .partner , .staff , .report {
+                &:hover {
+                    background: #d73b8c;
+                    ul {
+                        display: inline-table;
+                        background-color:#d73b8c;
+                        li:hover {
+                            background:#b63375;
+                        }   
+                        }
+                    }
+                }
+            }
+        }
+    
     .wrraper {
         width: 1570px;
         margin: 0 auto;
@@ -102,12 +312,12 @@ li{
             .report {
                 border-right:1px solid rgba(0,0,0,.1)
             }
-            .sell{
-                background: #0076b9;
-                &:hover{
-                    background: #3f3f3f;
-                }
+        }         
+        .shop {
+            background: #0076b9;
+            &:hover {
+                background: #41556e;
             }
-        }              
+        }     
     }
 }

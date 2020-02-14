@@ -14,7 +14,7 @@ class Header extends Component {
   }
 
   setTheme(event,className) {
-    event.stopPropagation();
+     event.stopPropagation(); // dwugnf tất cả các event cũ
 
     this.setState({
       color: className
@@ -51,6 +51,12 @@ class Header extends Component {
               <a href="https://www.facebook.com/" className="dowload">
                 <FontAwesomeIcon className="icon-header" icon={faCloudDownloadAlt} />
                 Tải công cụ hỗ trợ
+                <ul>
+                  <li>TeamViewer</li>
+                  <li>UntraViewer</li>
+                  <li>AnyDesk</li>
+                  <li>KiotViet chấm công vân tay</li>
+                </ul>
               </a>                      
             </div>      
             <div className="list-menu-end">
