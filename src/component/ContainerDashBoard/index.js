@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearchDollar, faReply, faArrowCircleDown, faArrowCircleRight, faChevronDown, faVolumeDown, faShareSquare, faClipboard } from '@fortawesome/free-solid-svg-icons';
 import ColumnGraphRevenue from '../ColumnGraphRevenue';
 import RowGraphTop from '../RowGraphTop';
+import DropdowMenu from '../DropdowMenu';
 
 
 class ContainerDashBoard extends Component {
+   
     render() {
         return (
             <div id="containerdashboard">
@@ -49,16 +51,8 @@ class ContainerDashBoard extends Component {
                                     <span>&ensp;</span>
                                     <span>0</span>
                                 </div>
-                                <div className="time">
-                                    Hôm nay  
-                                    <FontAwesomeIcon  className="icon-time" icon={faChevronDown} />                                   
-                                        <ul>
-                                            <li>Hôm qua</li>
-                                            <li>7 ngày qua</li>
-                                            <li>Tháng này</li>
-                                            <li>Tháng trước</li>
-                                        </ul>
-                                    
+                                <div  className="time time-one " >
+                                <DropdowMenu />                             
                                 </div>
                             </div>
                             <div>

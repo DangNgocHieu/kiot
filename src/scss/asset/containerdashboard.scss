@@ -72,27 +72,29 @@ a {
                 }
 
                 .dashboarhTitle {
+                    height: 23px;
                     display: flex;
                     justify-content: space-between;
                     padding: 12px 10px 10px 20px;
                     .posR {
 
                     }
+                    .click {
+                        width: 100%;
+                    }
 
                     .time {
                         width: 110px;
                         display: flex;
                         justify-content: flex-end;
-        
-                        ul{ 
-                            width: 110px;
-                            display: flex;
-                            flex-direction: column;
-                            display: none;
-                            justify-content: flex-end;
-                        }
                         .icon-time {
                             padding-left: 6px;
+                        }
+                        .menu {
+                            width: 100%;
+                            .text {
+                                width: 100%;
+                            }
                         }
                     }
                 }
