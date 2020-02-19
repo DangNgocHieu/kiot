@@ -24,7 +24,7 @@ class Card extends Component {
     return (
       <div>
         <button class="click" onClick={this.showMenu}>
-          Show menu
+          Hôm nay
           <FontAwesomeIcon  className="icon-time" icon={faChevronDown} /> 
         </button>
         

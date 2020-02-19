@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchDollar, faReply, faArrowCircleDown, faArrowCircleRight, faChevronDown, faVolumeDown, faShareSquare, faClipboard } from '@fortawesome/free-solid-svg-icons';
+import { faSearchDollar, faReply, faArrowCircleDown, faArrowCircleRight, faChevronDown, faVolumeDown } from '@fortawesome/free-solid-svg-icons';
 import ColumnGraphRevenue from '../ColumnGraphRevenue';
 import RowGraphTop from '../RowGraphTop';
 import DropdowMenu from '../DropdowMenu';
@@ -77,15 +77,7 @@ class ContainerDashBoard extends Component {
                                     </a>
                                 </div>
                                 <div className="time">
-                                    <a href="#" alt="">Hôm nay  
-                                    <FontAwesomeIcon  className="icon-time" icon={faChevronDown} />                                   
-                                        <ul>
-                                            <li>Hôm qua</li>
-                                            <li>7 ngày qua</li>
-                                            <li>Tháng này</li>
-                                            <li>Tháng trước</li>
-                                        </ul>
-                                    </a>
+                                <DropdowMenu />     
                                 </div>
                             </div>
                             <div className="rowgraph">

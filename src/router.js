@@ -2,14 +2,15 @@ import React from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import DashBoard from './pages/DashBoard';
+import Products from './pages/Products';
 const routes = [
     {
-        path: '/home',
+        path: '/Home',
         exact : true,
         main: ({history}) => <Home history={history}/>
     },
     {
-        path: '/login',
+        path: '/Login',
         exact : false,
         main: ({history}) => <Login history={history}/>
     },
@@ -17,6 +18,11 @@ const routes = [
         path: '/DashBoard',
         exact : false,
         main: ({history}) => <DashBoard history={history}/>
+    },
+    {
+        path : '/Products',
+        exact : false,
+        main: ({history}) => <Products history={history}/>
     },
 ];
 

@@ -12,7 +12,7 @@ class Menu extends Component {
                 <a href="https://www.facebook.com/" className="overview">
                   <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
                   Tổng quan</a>
-                <a href="https://www.facebook.com/" className="merchandise">
+                <a href="http://localhost:3000/Products" className="merchandise">
                   <FontAwesomeIcon className="icon-menu" icon={faCube} />
                   Hàng hóa
                   <ul>
