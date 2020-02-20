@@ -122,9 +122,15 @@
                     }
                 }
             }
+            .scroll-active {
+                position: fixed;
+                bottom: auto;
+                top: 20px;
+                margin-left: 250px;
+            }
             .products-right {
                 width: 1320px;
-
+                min-height: 600px;
                 .title-products {
                     display: flex;
                     justify-content: space-between;
@@ -147,13 +153,61 @@
                             .icon-column {
                                 padding-right: 10px;
                             }
-                            h1{
-                                margin: 0 auto;
-                                font-size: 26px;
-                                color: #333;
-                                line-height: 34px;
-                                font-weight: 700;
+                        }
+                    }
+                    h1{
+                        margin: 0;
+                        font-size: 26px;
+                        color: #333;
+                        line-height: 34px;
+                        font-weight: 700;
+                    }
+                }
+                .table-products {
+                    .scrollable {
+                        width: 100%;
+                        tr{
+                            height: 41px;
+                        }
+                        tbody {
+                            td {
+                                text-align: center;                               
                             }
+                        }
+                        .text-left {
+                            text-align: left;
+                        }
+                        .text-right {
+                            text-align: right;
+                        }
+                        .title-table {
+                            background: #dcf4fc;
+                            color: #313131;
+                        }
+                    }
+                }
+                .paging-box {
+                    padding: 12px;
+                    height: 36px;
+                    .pager {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: flex-end;
+                        .number , .nav-head, .nav-pre, .nav-next, .nav-last{
+                            height: auto;
+                            padding: 0 5px;
+                            color: #666;
+                            min-width: 18px;
+                            text-align: center;
+                            span{
+                                width: 18px;
+                            }
+                        }
+                        .laber {
+                            padding-left: 20px;
+                            color: #666;
+                            font-size: 13px;
+
                         }
                     }
                 }
