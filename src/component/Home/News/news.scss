@@ -1,0 +1,33 @@
+#news {
+  background-color: #fff;
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    .title {
+      margin: 0;
+      padding: 50px 0 35px 0;
+    }
+    .box-news {
+      display: flex;
+      .box-news-left {
+        width: 80%;
+        .news-list{
+          
+          height: 182px;
+        }
+        .list-news-1 {
+          width: 43%;
+          margin-top: 35px;
+          color: #595959;
+          font-size: 14px;
+          margin-right: calc(7% - 30px);
+        }
+      }
+      .box-news-right {
+        width: 20%;
+      }
+    }
+  }
+}

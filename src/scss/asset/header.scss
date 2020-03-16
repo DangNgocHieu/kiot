@@ -169,6 +169,7 @@
                         height: auto;
                         background: #2782c0;
                         display: none;
+                        z-index: 2;
                     }
                     
                     &:hover {
@@ -199,6 +200,7 @@
                         display: none;
                         width: 170px;
                         height: auto;
+                        z-index: 2;
                     }
                     &:hover {
                         color: #fff;

@@ -5,7 +5,7 @@ import DashBoard from './pages/DashBoard';
 import Products from './pages/Products';
 const routes = [
     {
-        path: '/Home',
+        path: '/',
         exact : true,
         main: ({history}) => <Home history={history}/>
     },

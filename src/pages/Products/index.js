@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Header from "../../component/Header";
-import Menu from "../../component/Menu";
-import ComponentProducts from "../../component/ComponentProducts";
+import ComponentProducts from "../../component/Products/ComponentProducts";
 import Support from "../../component/Support";
 
 class Products extends Component {

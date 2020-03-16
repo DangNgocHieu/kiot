@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 // import { Form, Container} from 'reactstrap';
-import Header from './../../component/Header';
-import Content from './../../component/Content'
-import Footer from './../../component/Footer' 
+import HeaderHome from './../../component/Home/HeaderHome';
+import BannerHome from '../../component/Home/BannerHome';
+import Introduces from '../../component/Home/Introduces';
+import Industry from '../../component/Home/Industry';
+import Customer from '../../component/Home/Customer';
+import News from '../../component/Home/News';
 
 class Home extends Component {
 
   
   render() {
     return (    
-         
+      
       <div id="home">
-         <Header />
-         <Content  history = {this.props.history }/>
-         <Footer />
+        <HeaderHome />
+        <BannerHome />
+        <Introduces />
+        <Industry />
+        <Customer />
+        <News />
       </div>
     );
   }

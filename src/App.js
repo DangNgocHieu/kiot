@@ -2,7 +2,7 @@ import React, {Component, Suspense} from 'react';
 import routes from './router';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import './i18n';
-import Header from './component/Header';
+// import Header from './component/Header';
 const Loader = () => (
     <div className="App">
         <div>loading...</div>

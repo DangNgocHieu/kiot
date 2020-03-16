@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faChevronDown, faChevronUp} from '@fortawesome/free-solid-svg-icons';
+import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
-class LeftStatus extends Component {
+class Iventory extends Component {
   constructor() {
     super();
     
@@ -24,7 +24,7 @@ class LeftStatus extends Component {
     return (
       <div>
         <div>
-          <h3 className="click" onClick={this.showMenu}>Loại hàng
+          <h3 className="click" onClick={this.showMenu}>Tồn kho
           <FontAwesomeIcon  className="icon-time" icon={faChevronDown} /> 
           </h3>
         </div>
@@ -35,9 +35,11 @@ class LeftStatus extends Component {
             ? (
                
             <div className="box">
-                <div className="row-box"><input type="checkbox"  ></input><span>Hàng hóa</span></div>
-                <div className="row-box"><input type="checkbox"  ></input><span>Dịch vụ</span></div>
-                <div className="row-box"><input type="checkbox"  ></input><span>Combo - Đóng gói</span></div>
+                <div className="row-box"><input type="radio"  ></input><span>Tất cả</span></div>
+                <div className="row-box"><input type="radio"  ></input><span>Dưới định mức tồn</span></div>
+                <div className="row-box"><input type="radio"  ></input><span>Vượt định mức tồn</span></div>
+                <div className="row-box"><input type="radio"  ></input><span>Còn hàng trong kho</span></div>
+                <div className="row-box"><input type="radio"  ></input><span>Hết hàng trong kho</span></div>
                 
             </div>
             )
@@ -49,4 +51,4 @@ class LeftStatus extends Component {
     );
   }
 }
-export default LeftStatus;
+export default Iventory;

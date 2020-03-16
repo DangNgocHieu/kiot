@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './../../component/Header';
-import ContainerDashBoard from './../../component/ContainerDashBoard';
+import ContainerDashBoard from '../../component/DashBoard/ContainerDashBoard';
 import Support from './../../component/Support';
 
 class DashBoard extends Component {

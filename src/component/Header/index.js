@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaintBrush, faExclamationCircle, faCloudDownloadAlt, faSortDown, faWrench, faFileAlt, faMale, faPuzzlePiece, faHistory, faTrashAlt, faUser, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-import Img from './../../component/Img';
-import Menu from './../../component/Menu';
+import Img from '../Img';
+import Menu from '../Menu';
 
 class Header extends Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class Header extends Component {
           </div>
           <div className="list-menu">   
             <div className="list-menu-center">
-              <a href="#" alt=" " className="topic" >
+              <a href="https://www.facebook.com/" alt="" className="topic" >
                 <FontAwesomeIcon className="icon-header" icon={faPaintBrush} />
                 Chủ đề
                 <div className="topic-box">
@@ -55,19 +55,19 @@ class Header extends Component {
                   <ul>
                     <li>
                       <Img  link="https://lh3.googleusercontent.com/proxy/b7MLcwkPrByozoSq2mYsWHVqOF4f-rBmFGFtRktyo_H6LT3fRZ9i7Foz4nRNJcXFPQFbrxBKR8sYyBsopHiHGCVH7ybnF7m-1PdH2nYpi-aiVFDwv5gXzpI5yWAGBirWa0Ea" />
-                      <a href="#" className="text-link">TeamViewer</a>
+                      <a href="https://www.facebook.com/"className="text-link">TeamViewer</a>
                       </li>
                     <li>
                       <Img link="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRDGg3oG6m3E2bKrDIehVnV7CRDgJvHqTLVrjuknyDIahwOBQVe" />
-                      <a href="#" className="text-link">UntraViewer</a>
+                      <a href="https://www.facebook.com/" className="text-link">UntraViewer</a>
                     </li>
                     <li>
                       <Img link="https://cdn.neow.in/news/images/uploaded/2018/04/1523434306_anydesk_story.jpg" />
-                      <a href="#" className="text-link">AnyDesk</a>
+                      <a href="https://www.facebook.com/" className="text-link">AnyDesk</a>
                       </li>
                     <li>
                       <Img link="https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/ac/d2/68/acd268c3-0063-6716-6ad4-ef689b0011bc/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-85-220.png/1200x630wa.png"/>
-                      <a href="#" className="text-link">KiotViet chấm công vân tay</a>
+                      <a  className="text-link">KiotViet chấm công vân tay</a>
                       </li>
                   </ul>
                
