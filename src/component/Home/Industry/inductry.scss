@@ -29,7 +29,8 @@
       .list-industry {
         margin-bottom: 20px;
         width: 210px;
-        height: 145px;
+        height: 115px;
+        padding-top: 30px;
 
         .icon{
           width: 45px;
@@ -43,6 +44,15 @@
           padding: 15px 0 0 0;
           font-weight: 400;
         }
+        &:hover {
+          background-color: #4d9c2f;
+          .icon {
+            color: #fff;
+          }
+          h3 {
+            color: #fff;
+          }
+        }
       }
     }
     .box-register {
@@ -54,17 +64,7 @@
         line-height: 36px ;
         font-weight: 500;
       }
-      .free {
-        background-color: #4cb050;
-        line-height: 65px;
-        color: #fff;
-        border: none;
-        border-radius: 3px;
-        transition: all 0.2s ease;
-        font-size: 24px;
-        padding: 0 45px;
-     
-      }
+      
     }
   }
 }

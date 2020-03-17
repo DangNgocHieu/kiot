@@ -1,5 +1,6 @@
 #news {
   background-color: #fff;
+  padding-bottom: 60px;
   .container {
     width: 1200px;
     margin: 0 auto;
@@ -13,20 +14,90 @@
       display: flex;
       .box-news-left {
         width: 80%;
-        .news-list{
-          
-          height: 182px;
-        }
-        .list-news-1 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .list-news-1,
+        .list-news-2,
+        .list-news-3,
+        .list-news-4 {
           width: 43%;
           margin-top: 35px;
           color: #595959;
           font-size: 14px;
           margin-right: calc(7% - 30px);
+          text-align: left;
+
+          .img {
+            height: 182px;
+            width: 100%;
+            margin-bottom: 22px;
+          }
+          a,
+          h3 {
+            margin: 0;
+            color: #2d2d2d;
+
+            font-size: 16px;
+            line-height: 20px;
+          }
+          .text {
+            font-size: 14px;
+            color: #595959;
+          }
+        }
+        .list-news-3,
+        .list-news-4 {
+          .img {
+            width: 138px;
+            height: 68px;
+            margin-right: 18px;
+            float: left;
+          }
+          h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+          }
+        }
+        .btn {
+          margin: 15px 0 50px 500px;
+          padding: 0 50px;
+          font-size: 18px;
+          line-height: 44px;
+          text-align: center;
+          color: #a1a1a1;
+          border: 1px solid #a1a1a1;
+          background-color: #fff;
+          border-radius: 4px;
+
+          &:hover {
+            background-color: #4cb050;
+            border: 1px solid #4cb050;
+            color: #fff;
+          }
         }
       }
       .box-news-right {
         width: 20%;
+       
+        .list-img {
+          height: 68px;
+          border: 1px solid #dfdfdf;
+          border-radius: 3px;
+          border-top: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color:  #E6E6E6;
+          }
+        }
+        .first-child {
+          border-top: 1px solid #dfdfdf;
+        }
       }
     }
   }

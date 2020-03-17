@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './introduces.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCube, faUserPlus, faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import ButtonFree from "../ButtonFree";
 class Introduces extends Component {
     render() {
         return (
@@ -12,7 +13,7 @@ class Introduces extends Component {
                     </div>
                     <div className="row">
                         <div className="list-introduces like-products">
-                           <FontAwesomeIcon className="icon-checkbox"icon={faCube} />
+                            <FontAwesomeIcon className="icon-checkbox" icon={faCube} />
                             <div className="text-introduces">
                                 <h3>Đơn giản & dễ dùng</h3>
                                 <p>Nhân viên bán hàng chỉ mất 15 phút làm quen để bắt đầu bán hàng với KiotViet.
@@ -29,7 +30,7 @@ class Introduces extends Component {
                             </div>
                         </div>
                         <div className="list-introduces like-products">
-                           <FontAwesomeIcon className="icon-checkbox" icon={faDollarSign} />
+                            <FontAwesomeIcon className="icon-checkbox" icon={faDollarSign} />
                             <div className="text-introduces">
                                 <h3>Tiết kiệm chi phí nhất</h3>
                                 <p>Miễn phí cài đặt, phí triển khai, nâng cấp và hỗ trợ. Rẻ hơn một ly trà đá, chỉ từ 6.000 đồng/ngày, bạn đã có thể áp dụng công nghệ vào quản lý cửa hàng.
@@ -37,7 +38,7 @@ class Introduces extends Component {
                             </div>
                         </div>
                     </div>
-                    <button className="free">Dùng thử miễn phí</button>
+                    <ButtonFree />
                 </div>
             </div>
         );

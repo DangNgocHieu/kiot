@@ -51,3 +51,34 @@ body {
 
     }
 }
+p{
+    font-size: 14px;
+   margin: 0;
+   line-height: 24px;
+}
+.title {
+    margin: 0;
+    font-size: 31px;
+    line-height: 36px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+h5 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin: 0;
+    min-height: 27px;
+    margin-top: 10px;
+}
+span {
+    color: #4cb050;
+    font-weight: bold;
+}

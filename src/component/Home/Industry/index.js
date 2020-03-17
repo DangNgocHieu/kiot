@@ -2,6 +2,7 @@ import React,{ Component } from "react"
 import './inductry.scss'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faFemale, faCoffee, faAngleDown, faAngleDoubleDown, faAddressCard, faMagic, faRadiation, faDollarSign, faBezierCurve, faJedi, faWalking, faObjectGroup, faTimes, faFan, faAlignCenter } from "@fortawesome/free-solid-svg-icons";
+import ButtonFree from "../ButtonFree";
 
 class Industry extends Component {
     render (){
@@ -77,7 +78,7 @@ class Industry extends Component {
                     </div>
                     <div className="box-register">
                         <h2 className="title">Đăng ký dùng thử miễn phí 10 ngày!</h2>
-                        <button className="free">Dùng thử miễn phí</button>
+                        <ButtonFree />
                     </div>
                 </div>
             </div>
