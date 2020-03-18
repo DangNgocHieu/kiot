@@ -61,7 +61,7 @@ class News extends Component {
                             <button className="btn" >Xem thêm...</button>
                         </div>
                         <div className="box-news-right">
-                            <h5 className="title">Báo chí viết về KiotViet</h5>
+                            <h5 >Báo chí viết về KiotViet</h5>
 
                             <div className="list-img first-child">
                                 <a href="http://dantri.com.vn/suc-manh-so/intel-viet-nam-chuyen-giao-cong-nghe-den-cac-nha-ban-le-20151125153648785.htm" rel="nofollow noopener noreferrer" target="_blank">

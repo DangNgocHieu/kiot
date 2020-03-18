@@ -19,7 +19,6 @@ class BannerHome extends Component {
         this.setState({
             videoShow: !this.state.videoShow
         }
-
         )
     }
     render() {
@@ -27,7 +26,7 @@ class BannerHome extends Component {
             <div id="bannerHome">
                 <div className="container">
                     <div className="left-container">
-                        <div className="icon-video" data-youtube="https://www.youtube.com/embed/oSZsEnsR71U?rel=0&amp;controls=0&amp;autoplay=1" onClick={e => this.handleClick(e)}></div>
+                        <a href="#" className="icon-video" onClick={e => this.handleClick(e)}></a>
                     </div>
                     <div className="right-container">
                         <div className="text-banner">
@@ -38,15 +37,15 @@ class BannerHome extends Component {
                     </div>
                 </div>
                 <div className="box-video">
-                        {this.state.videoShow
-                            ?
-                                <div className="login-overlay"> 
-                                <Video videoUrl={this.state.link} />
-                                <FontAwesomeIcon className="close" icon={faTimes} onClick={e => this.handleClick(e)} />
-                                
-                                </div>
-                            : ""
-                        }
+                    {this.state.videoShow
+                        ?
+                        <div className="login-overlay">
+                            <Video videoUrl={this.state.link} />
+                            <FontAwesomeIcon className="close" icon={faTimes} onClick={e => this.handleClick(e)} />
+
+                        </div>
+                        : ""
+                    }
                 </div>
             </div>
         );

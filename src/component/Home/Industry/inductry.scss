@@ -29,21 +29,16 @@
       .list-industry {
         margin-bottom: 20px;
         width: 210px;
-        height: 115px;
+        
         padding-top: 30px;
 
         .icon{
           width: 45px;
-          height: 50px;
+         
           color: green;
           
         }
-        h3{
-          font-size: 14px;
-          line-height: 26px;
-          padding: 15px 0 0 0;
-          font-weight: 400;
-        }
+       
         &:hover {
           background-color: #4d9c2f;
           .icon {
