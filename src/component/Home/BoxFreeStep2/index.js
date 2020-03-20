@@ -1,11 +1,63 @@
 import React, { Component } from "react";
 import './boxfreestep2.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-import { faFemale, faCoffee, faAngleDown, faAngleDoubleDown, faAddressCard, faMagic, faRadiation, faDollarSign, faBezierCurve, faJedi, faWalking, faObjectGroup, faTimes, faFan, faAlignCenter } from "@fortawesome/free-solid-svg-icons";
+import Scroll from "../../Home/Scroll"
+import { faFemale, faCoffee, faAngleDown, faAngleDoubleDown, faAddressCard, faMagic, faRadiation, faDollarSign, faBezierCurve, faJedi, faWalking, faObjectGroup, faTimes, faFan, faAlignCenter, faSortUp, faSortDown } from "@fortawesome/free-solid-svg-icons";
 
 
 class BoxFreeStep2 extends Component {
+    constructor() {
+        super();
+        this.state = {
+            click: false,
+            icon: faSortUp,
+            city: [
+                "Tỉnh/Thành phố - Quận/Huyện",
+                "An Giang - Thành phố Châu Đốc",
+                "An Giang - Thành phố Châu1235423423423423 Đốc",
+                "An Giang - Thành phố C23423423423hâu Đốc",
+                "An Giang - Thành phố Châu Đố121212121c",
+                "An Giang - Thành phố Châu Đ12121212ốc",
+                "An Giang - Thành phố Châu Đố12121212c",
+                "An Giang - Thành phố Châu Đốc",
+                "An Giang - Thành phố Châu Đ121341311234ốc"
+            ],
+            cityname: ""
+
+        }
+        this.handeClick = this.handeClick.bind(this)
+    }
+    handeClick(e) {
+        if (this.state.icon == faSortUp) {
+            this.setState(
+                {
+                    icon: faSortDown
+                }
+            )
+        }
+        else {
+            this.setState(
+                {
+                    icon: faSortUp
+                }
+            )
+        }
+        this.setState(
+            {
+                click: !this.state.click,
+            }
+        )
+        console.log(this.state.click)
+    }
+    onSet = (value, action) => {
+        this.setState(
+            {
+                cityname: value,
+                click: action
+            }
+        )
+
+    }
     render() {
         return (
 
@@ -31,9 +83,45 @@ class BoxFreeStep2 extends Component {
 
                     </div>
                     <div className="boxfree-right">
-                        <div class="form-group form-check-label"> <input type="text" class="form-control" id="fullname" placeholder="Họ tên" required="" />
-                           
+                        <div className="form-group-right">
+                            <div class="form-group form-check-label">
+                                <input type="text" class="form-control" id="fullname" placeholder="Họ tên" />
+                            </div>
+                            <div className="form-group form-telephone-email">
+                                <div className="form-telephone">
+                                    <input type="text" className="form-control" id="phone" placeholder="Điện thoại" >
+                                    </input>
+                                    <span className="color-red">*</span>
+                                </div>
+                                <div className="form-email">
+                                    <input type="text" className="form-control" id="phone" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div className="select-container ">
+                                <div>
+                                    <a href="#" className="select-choice" onClick={e => this.handeClick(e)}>
+                                        <p>
+                                            {this.state.cityname
+                                                ? this.state.cityname
+                                                : "Tỉnh/Thành phố - Quận/Huyện"
+                                            }
+                                        </p>
+                                        < FontAwesomeIcon className="icon-sortdown" icon={this.state.icon} />
+                                    </a>
+                                    {
+                                        this.state.click
+                                            ?
+                                            <Scroll city={this.state.city} onSet={this.onSet} />
+                                            : ""
+                                    }
+                                </div>
+                            </div>
+                            <div className="form-group">
+                                <input type="text" className="name" placeholder="Đặt tên cho gian hàng của bạn" />
+                                <span className="note" >kiotviet.vn</span>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
