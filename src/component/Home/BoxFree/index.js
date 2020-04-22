@@ -8,12 +8,12 @@ import BoxFreeStep2 from "../BoxFreeStep2";
 class BoxFree extends Component {
     constructor(){
         super();
-        this.handleClick = this.handleClick.bind(this)
+        this.handleClickBoxFree = this.handleClickBoxFree.bind(this)
         this.state = {
             boxfree: false,
         }
     }
-    handleClick(e){
+    handleClickBoxFree(e){
         this.setState(
             {
                 boxfree: !this.state.boxfree
@@ -49,7 +49,7 @@ class BoxFree extends Component {
                             <div className="list-industry">
                                 <FontAwesomeIcon className="icon" icon={faFemale} />
                                 <p>Thời trang</p>
-                                <a className="hover-layout" onClick={e => this.handleClick(e)}>
+                                <a className="hover-layout" onClick={e => this.handleClickBoxFree(e)}>
                                     <p>Thời trang</p>
                                 </a>
                                 {
@@ -57,7 +57,7 @@ class BoxFree extends Component {
                                     ? 
                                     <div id="step">
                                         <BoxFreeStep2 />
-                                        <FontAwesomeIcon icon={faTimes}  onClick={(e) => this.handleClick(e)} />
+                                        <FontAwesomeIcon icon={faTimes}  onClick={(e) => this.handleClickBoxFree(e)} style={{top:"100px", position:"absolute"}} />
                                     </div>
                                     :''
                                 }

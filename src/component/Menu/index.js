@@ -9,7 +9,7 @@ class Menu extends Component {
       <div id="menu" className={this.props.color} >
         <div className="wrraper">
             <div className="list-menu">
-                <a href="https://www.facebook.com/" className="overview">
+                <a href="http://localhost:3000/DashBoard" className="overview">
                   <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
                   Tổng quan</a>
                 <a href="http://localhost:3000/Products" className="merchandise">
@@ -27,7 +27,7 @@ class Menu extends Component {
                       Kiểm kho</li>
                   </ul>
                 </a>
-                <a href="https://www.facebook.com/" className="exchange">
+                <a href="" className="exchange">
                   <FontAwesomeIcon className="icon-menu" icon={faExchangeAlt} />
                   Giao dịch
                   <ul>
@@ -48,7 +48,7 @@ class Menu extends Component {
                       Xuất hủy</li>
                   </ul>
                 </a>
-                <a href="https://www.facebook.com/" className="partner">
+                <a href="" className="partner">
                   <FontAwesomeIcon className="icon-menu" icon={faMale} />
                   Đối tác
                   <ul>
@@ -60,7 +60,7 @@ class Menu extends Component {
                       Nhà cung cấp</li>
                   </ul>
                 </a>
-                <a href="https://www.facebook.com/" className="staff">
+                <a href="" className="staff">
                   <FontAwesomeIcon className="icon-menu" icon={faUser} />
                   Nhân viên
                   <ul>
@@ -78,10 +78,10 @@ class Menu extends Component {
                       Thiết lập hoa hồng</li>
                   </ul>
                 </a>
-                <a href="https://www.facebook.com/">
+                <a href="">
                   <FontAwesomeIcon className="icon-menu" icon={faDollarSign} />
                   Sổ quỹ</a>
-                <a href="https://www.facebook.com/" className="report">
+                <a href="" className="report">
                   <FontAwesomeIcon className="icon-menu" icon={faChartBar} />
                   Báo cáo
                   <ul>
@@ -116,7 +116,7 @@ class Menu extends Component {
                 </a>
             </div>
             <div className="shop">
-                <a href="https://www.facebook.com/" class="sell">
+                <a href="" class="sell">
                   <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
                   Bán Hàng</a>
             </div>

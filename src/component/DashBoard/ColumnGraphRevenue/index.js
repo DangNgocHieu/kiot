@@ -26,10 +26,11 @@ const data = [
 
 export default class ColunmGraph extends PureComponent {
 
+  
   render() {
     return (
       <BarChart
-        width={1190}
+        width={1000}
         height={368}
         data={data}
         margin={{

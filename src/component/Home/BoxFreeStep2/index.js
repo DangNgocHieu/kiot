@@ -3,7 +3,9 @@ import './boxfreestep2.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Scroll from "../../Home/Scroll"
 import { faFemale, faCoffee, faAngleDown, faAngleDoubleDown, faAddressCard, faMagic, faRadiation, faDollarSign, faBezierCurve, faJedi, faWalking, faObjectGroup, faTimes, faFan, faAlignCenter, faSortUp, faSortDown } from "@fortawesome/free-solid-svg-icons";
-
+import ReCAPTCHA from 'react-grecaptcha'
+const callback = function () {};
+const expiredCallback = function () {};
 
 class BoxFreeStep2 extends Component {
     constructor() {
@@ -26,7 +28,9 @@ class BoxFreeStep2 extends Component {
 
         }
         this.handeClick = this.handeClick.bind(this)
+      
     }
+   
     handeClick(e) {
         if (this.state.icon == faSortUp) {
             this.setState(
@@ -120,12 +124,27 @@ class BoxFreeStep2 extends Component {
                                 <input type="text" className="name" placeholder="Đặt tên cho gian hàng của bạn" />
                                 <span className="note" >kiotviet.vn</span>
                             </div>
-                        </div>
+                            <div className="form-group login">
+                                <input type="text" className="form-control" id="name" placeholder="Tên đăng nhập" />
+                                <input type="text" className="form-control" id="pass" placeholder="Mật khẩu" />
+                            </div>
+                            <div className="capcha form-group">
+                                <ReCAPTCHA
+                                    sitekey="6LeTci8UAAAAAAZV-D4OGD9x7VJvBUQ8QJDT9N4X"
+                                    callback={callback}
+                                    expiredCallback={expiredCallback}
+                                    locale="en"
+                                />
+                            </div>
+                            <div className="register">
+                                    <a className="back" href="#" >Quay lại</a>
+                                    <a className="submit" href="#"> Đăng ký </a>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
-
         );
     }
 }

@@ -81,6 +81,7 @@ class ContainerDashBoard extends Component {
                                 </div>
                             </div>
                             <div className="rowgraph">
+                            <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
                                 <RowGraphTop />
                             </div>
                         </div>
