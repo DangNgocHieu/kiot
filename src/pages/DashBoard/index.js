@@ -58,7 +58,8 @@ class DashBoard extends Component {
     return (    
          
       <div id="dashboard">
-         <Header  color={this.state.color} />
+        {/* color={this.state.color}  */}
+         {/* <Header  />   */}
          <ContainerDashBoard />
          <Support />
       </div>

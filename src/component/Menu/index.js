@@ -1,128 +1,140 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEyeSlash, faCube, faExchangeAlt, faUser, faDollarSign, faMale, faChartBar, faTh, faTags, faCheckSquare, faReplyAll, faCompressArrowsAlt, faFileAlt, faShareAlt, faUndo, faTable, faFileInvoiceDollar, faChartPie, faShare } from '@fortawesome/free-solid-svg-icons';
+import { faEyeSlash, faCube, faExchangeAlt, faUser, faDollarSign, faMale, faChartBar, faTh, faTags, faCheckSquare, faReplyAll, faCompressArrowsAlt, faFileAlt, faShareAlt, faUndo, faTable, faFileInvoiceDollar, faChartPie, faShare, faCircle, faAtom } from '@fortawesome/free-solid-svg-icons';
+import Img from '../Img';
 
 class Menu extends Component {
 
   render() {
-    return (      
+    return (
       <div id="menu" className={this.props.color} >
         <div className="wrraper">
-            <div className="list-menu">
-                <a href="http://localhost:3000/DashBoard" className="overview">
-                  <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
+          <div className="menu-title">
+            <FontAwesomeIcon className="icon" icon={faAtom} />
+            <p className="title-dss">DSS</p>
+          </div>
+          <div className="menu-info">
+            <Img link="https://scontent-hkg4-1.xx.fbcdn.net/v/t1.15752-9/82507248_177416883347702_3813286383041118208_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=ke1nB0BwBJsAX8m9DmJ&_nc_ht=scontent-hkg4-1.xx&oh=0416bd358d64eee1bb42ec9e86cdbe7e&oe=5EC676DC&dl=1" />
+            <div className="menu-name">
+              <span className="text-name">Quỳnh Lê</span>
+              <span className="id">181298</span>
+            </div>
+          </div>
+          <div className="list-menu">
+            <a href="http://localhost:3000/DashBoard" className="overview">
+              <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
                   Tổng quan</a>
-                <a href="http://localhost:3000/Products" className="merchandise">
-                  <FontAwesomeIcon className="icon-menu" icon={faCube} />
+            <a href="http://localhost:3000/Products" className="merchandise">
+              <FontAwesomeIcon className="icon-menu" icon={faCube} />
                   Hàng hóa
                   <ul>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faTh} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faTh} />
                       Danh mục</li>
-                    <li>
-                    <FontAwesomeIcon  className="icon-menu-chill" icon={faTags} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faTags} />
                       Thiết lập giá</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faCheckSquare} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faCheckSquare} />
                       Kiểm kho</li>
-                  </ul>
-                </a>
-                <a href="" className="exchange">
-                  <FontAwesomeIcon className="icon-menu" icon={faExchangeAlt} />
+              </ul>
+            </a>
+            <a href="" className="exchange">
+              <FontAwesomeIcon className="icon-menu" icon={faExchangeAlt} />
                   Giao dịch
                   <ul>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faFileAlt} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faFileAlt} />
                       Hóa đơn</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faReplyAll} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faReplyAll} />
                       Trả hàng</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faShareAlt} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faShareAlt} />
                       Nhập hàng</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faShare} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faShare} />
                       Trả hàng nhập</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faCompressArrowsAlt} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faCompressArrowsAlt} />
                       Xuất hủy</li>
-                  </ul>
-                </a>
-                <a href="" className="partner">
-                  <FontAwesomeIcon className="icon-menu" icon={faMale} />
+              </ul>
+            </a>
+            <a href="" className="partner">
+              <FontAwesomeIcon className="icon-menu" icon={faMale} />
                   Đối tác
                   <ul>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faMale} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faMale} />
                       Khách hàng</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faUndo} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faUndo} />
                       Nhà cung cấp</li>
-                  </ul>
-                </a>
-                <a href="" className="staff">
-                  <FontAwesomeIcon className="icon-menu" icon={faUser} />
+              </ul>
+            </a>
+            <a href="" className="staff">
+              <FontAwesomeIcon className="icon-menu" icon={faUser} />
                   Nhân viên
                   <ul>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faMale} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faMale} />
                       Nhân viên</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faTable} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faTable} />
                       Chấm công</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faFileInvoiceDollar} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faFileInvoiceDollar} />
                       Bảng tính lương</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faDollarSign} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faDollarSign} />
                       Thiết lập hoa hồng</li>
-                  </ul>
-                </a>
-                <a href="">
-                  <FontAwesomeIcon className="icon-menu" icon={faDollarSign} />
+              </ul>
+            </a>
+            <a href="">
+              <FontAwesomeIcon className="icon-menu" icon={faDollarSign} />
                   Sổ quỹ</a>
-                <a href="" className="report">
-                  <FontAwesomeIcon className="icon-menu" icon={faChartBar} />
+            <a href="" className="report">
+              <FontAwesomeIcon className="icon-menu" icon={faChartBar} />
                   Báo cáo
                   <ul>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faChartPie} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faChartPie} />
                       Cuối ngày</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faFileAlt} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faFileAlt} />
                       Bán hàng</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Đặt hàng</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Hàng hóa</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Khách hàng</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Nhà cung cấp</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Nhân viên</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Kênh bán hàn</li>
-                    <li>
-                    <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
+                <li>
+                  <FontAwesomeIcon className="icon-menu-chill" icon={faEyeSlash} />
                       Tài chính</li>
-                  </ul>
-                </a>
-            </div>
-            <div className="shop">
-                <a href="" class="sell">
-                  <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
+              </ul>
+            </a>
+          </div>
+          <div className="shop">
+            <a href="" class="sell">
+              <FontAwesomeIcon className="icon-menu" icon={faEyeSlash} />
                   Bán Hàng</a>
-            </div>
+          </div>
         </div>
       </div>
-    );  
+    );
   }
 }
 

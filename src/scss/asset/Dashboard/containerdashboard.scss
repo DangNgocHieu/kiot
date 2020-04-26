@@ -8,48 +8,64 @@ a {
 }
 
 #containerdashboard {
-    padding-top: 15px;
-    background-color: #c1c1c1;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
     .wrraper {
-        width: 100%;
+        width: 80%;
         height: 100%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+      
+        // display: flex;
+        // justify-content: space-between;
 
         .dashboardLeft {
-            width: 78%;
-            .dashboardBox {
-                margin-bottom: 20px;
-                background-color: #fff;
-                .dashloadTitle {
-                    padding: 12px 10px 10px 20px;
-                    margin-bottom: 6px;
-                    font-size: 14px;
-                    font-weight: 700;
+            width: 100%;
+            .dashloadInfo {
+                height: 70px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                // padding-right: 20px;
+                .img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
                 }
+                .text-name {
+                    padding: 0 10px;
+                }
+            }
+            .dashboardBox {
                 .dashloadGeneral {
+                    background-color: rgba(231, 226, 226, 0.938);
                     height: 84px;
                     display: flex;
-                    .total , .return, .download {
+                    .total,
+                    .return,
+                    .download {
                         height: 100%;
                         width: calc(100% / 4);
                         display: flex;
                         flex-direction: row;
                         justify-content: space-around;
-                        
-                        .icon-total , .icon-return, .icon-dowload {
+
+                        .icon-total,
+                        .icon-return,
+                        .icon-dowload {
                             width: 30px;
                             height: 30px;
                             padding-top: 25px;
                             margin-left: 30px;
                         }
-                        .text-total , .text-return, .text-dowload {
+                        .text-total,
+                        .text-return,
+                        .text-dowload {
                             display: flex;
                             flex-direction: column;
                             width: 70%;
                             margin-top: 10px;
-                            border-right:  1px solid #d6d6d6;
+                            border-right: 1px solid #d6d6d6;
                             height: 70px;
                         }
 
@@ -57,7 +73,7 @@ a {
                             font-weight: 700;
                             color: #666;
                         }
-                        
+
                         .number {
                             font-size: 22px;
                             color: #0094da;
@@ -77,7 +93,6 @@ a {
                     justify-content: space-between;
                     padding: 12px 10px 10px 20px;
                     .posR {
-
                     }
                     .click {
                         width: 100%;
@@ -98,9 +113,10 @@ a {
                 }
                 .kv-tab {
                     margin: 0 20px 23px;
-                    
                 }
-                .date, .hour, .day {
+                .date,
+                .hour,
+                .day {
                     border: none;
                     border-radius: 0;
                     margin: 0 10px 0 0;
@@ -143,7 +159,7 @@ a {
                 .dashboard-list {
                     height: 846px;
                     overflow: auto;
-                    ul{
+                    ul {
                         margin: 0 20px 0 35px;
                         padding: 0 0 10px 32px;
                         display: flex;
@@ -173,7 +189,7 @@ a {
                             margin: 0;
                             color: #b1b1b1;
                             font-size: 11px;
-                            font-style: italic
+                            font-style: italic;
                         }
                         .icon {
                             width: 28px;
@@ -186,7 +202,6 @@ a {
                             color: #fff;
                         }
                     }
-                    
                 }
             }
         }
