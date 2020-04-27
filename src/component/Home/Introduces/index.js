@@ -38,7 +38,7 @@ class Introduces extends Component {
                             </div>
                         </div>
                     </div>
-                    <ButtonFree />
+                    {/* <ButtonFree /> */}
                 </div>
             </div>
         );

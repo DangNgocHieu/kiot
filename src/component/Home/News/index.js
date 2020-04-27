@@ -13,7 +13,7 @@ class News extends Component {
                     <div className="box-news">
                         <div className="box-news-left">
                             <div className="list-news-1">
-                                <Img link="https://www.kiotviet.vn/wp-content/uploads/2019/11/kich-hoat-van-chuyen-2-1.png" />
+                                <Img link="https://dahua.vn/wp-content/uploads/2018/10/logoDSS.png" />
                                 <h3>
                                     <a href="https://www.kiotviet.vn/kich-hoat-van-chuyen-ngay-khuyen-mai-trao-lien-tay/" title="Kích hoạt VẬN CHUYỂN ngay - Khuyến mãi trao liền tay"> Kích hoạt VẬN CHUYỂN ngay - Khuyến mãi trao liền tay </a>
                                 </h3>
@@ -29,9 +29,9 @@ class News extends Component {
                                 </button>
                             </div>
                             <div className=" list-news-2">
-                                <Img link="https://www.kiotviet.vn/wp-content/uploads/2020/02/Website.jpg" />
+                                <Img link="https://dahua.vn/wp-content/uploads/2020/04/anh-thums.jpg" />
                                 <h3>
-                                    <a href="https://www.kiotviet.vn/cham-soc-chu-dao-tang-toc-ho-tro-voi-tong-dai-19006522/" title="Chăm sóc chu đáo, tăng tốc hỗ trợ với tổng đài 19006522"> Chăm sóc chu đáo, tăng tốc hỗ trợ với tổng đài 19006522 </a>
+                                    <a href="https://dahua.vn/talkshow-ban-nghi-gi-ve-cong-nghe/" title="Lãnh đạo DSS Việt Nam chia sẻ trong Talkshow “Bạn nghĩ gì về công nghệ”"> Lãnh đạo DSS Việt Nam chia sẻ trong Talkshow “Bạn nghĩ gì về công nghệ” </a>
                                 </h3>
                                 <p>Từ ngày 01/03/2020, tổng đài chăm sóc khách hàng 1900 6522 của KiotViet chính thức được đưa vào hoạt động.…</p>
                                 <button type="submit" className="inlineBlock" title="Like Kích hoạt VẬN CHUYỂN ngay - Khuyến mãi trao liền tay">

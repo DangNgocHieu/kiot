@@ -21,11 +21,11 @@ class Home extends Component {
         <HeaderHome />
         <BannerHome />
         <Introduces />
-        <Industry />
+        {/* <Industry /> */}
         <Customer />
         <News />
-        <BoxKiot />
-        <RegisterFooter />
+        {/* <BoxKiot /> */}
+        {/* <RegisterFooter /> */}
         <BottomBox />
         <Support />
       </div>

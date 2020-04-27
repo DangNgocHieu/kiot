@@ -32,7 +32,8 @@ class BannerHome extends Component {
                         <div className="text-banner">
                             <span className="heading">Phần mềm quản lý bán hàng KiotViet</span>
                             <p className="text">KiotViet - Phần mềm quản lý bán hàng PHỔ BIẾN NHẤT với hơn 100.000 cửa hàng đang sử dụng. Đơn giản, dễ dùng, tiết kiệm chi phí và phù hợp với hơn 15 ngành hàng khác nhau.</p>
-                            <ButtonFree />
+                            {/* <ButtonFree /> */}
+                            <button id="btn">Biểu đồ</button>
                         </div>
                     </div>
                 </div>
